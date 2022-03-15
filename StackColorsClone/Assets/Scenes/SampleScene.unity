@@ -218,7 +218,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1881737982, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
 --- !u!1 &326167869
 GameObject:
@@ -696,7 +697,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1881737982, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
 --- !u!1 &963194225
 GameObject:
@@ -977,7 +979,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1881737982, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
 --- !u!1 &1526245496
 GameObject:
@@ -1122,7 +1125,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.75, y: 1}
+    m_SensorSize: {x: 0.69491524, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1260,6 +1263,7 @@ GameObject:
   - component: {fileID: 1770560161}
   - component: {fileID: 1770560163}
   - component: {fileID: 1770560162}
+  - component: {fileID: 1770560164}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1548,6 +1552,18 @@ MonoBehaviour:
   onScreen:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1770560164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770560153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9280ddf1d4a637b4a84d713f713ff4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1884073702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,14 +1576,13 @@ GameObject:
   - component: {fileID: 1884073707}
   - component: {fileID: 1884073706}
   - component: {fileID: 1884073708}
-  - component: {fileID: 1884073709}
   m_Layer: 0
   m_Name: TriggerPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1884073703
 Transform:
   m_ObjectHideFlags: 0
@@ -1647,18 +1662,6 @@ CapsuleCollider:
   m_Height: 2.0000005
   m_Direction: 1
   m_Center: {x: 0.00000005960466, y: 0, z: -0.00000008940697}
---- !u!114 &1884073709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884073702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9280ddf1d4a637b4a84d713f713ff4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8237194533610179219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1666,16 +1669,8 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1881737982, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4152720440985878177, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
       propertyPath: m_Name
-      value: Collectible
-      objectReference: {fileID: 0}
-    - target: {fileID: 4152720440985878177, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
-      propertyPath: m_TagString
       value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 5170379857603156178, guid: 4259485614ebd6741ab12b0e59330834, type: 3}
