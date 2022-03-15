@@ -24,7 +24,7 @@ public class ForwardMovement : MonoBehaviour
     void FixedUpdate()
     {
         //transform.Translate(Vector3.forward * _speed * Time.deltaTime);
-        _rigidbody.AddForce(Vector3.forward * _speed, ForceMode.Impulse);
+        _rigidbody.AddForce(Vector3.forward * _speed);
         
     }
 
