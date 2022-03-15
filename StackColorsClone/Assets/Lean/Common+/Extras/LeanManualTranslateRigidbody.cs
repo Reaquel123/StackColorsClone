@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using FSA = UnityEngine.Serialization.FormerlySerializedAsAttribute;
 
@@ -60,6 +61,16 @@ namespace Lean.Common
 		[SerializeField]
 		private bool controlling;
 
+		[HideInInspector] public bool isLocked;
+
+		public static LeanManualTranslateRigidbody  Instance;
+
+		private void Awake()
+		{
+			Instance = this;
+		}
+
+
 		/// <summary>This method allows you to translate along DirectionA, with the specified multiplier.</summary>
 		public void TranslateA(float magnitude)
 		{
@@ -100,6 +111,10 @@ namespace Lean.Common
 			}
 
 			remainingDelta += vector * Multiplier;
+			if (isLocked)
+			{
+				remainingDelta.x = 0;
+			}
 
 			controlling = true;
 		}
